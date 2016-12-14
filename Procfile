@@ -1,1 +1,1 @@
-web: bundle exec ruby server.rb -p 90
+web: bundle exec ruby server.rb
