@@ -7,7 +7,7 @@ get '/' do
   if params["hub.mode"] == "subscribe" && params["hub.verify_token"] == "test_batbayar_b0tb0y"
     params["hub.challenge"]
   else
-    'Hello world'
+    'Hello world 123'
   end
 end
 
