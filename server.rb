@@ -25,3 +25,7 @@ post "/" do
   end
   'ok'
 end
+
+get "/get_long_token" do
+  get_token
+end
