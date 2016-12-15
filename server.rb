@@ -18,9 +18,9 @@ post "/" do
   entries.each do |entry|
     entry["messaging"].each do |messaging|
       sender_id = messaging["sender"]["id"]
-      text = messaging["message"]["text"]
-      reply = "You said: #{text}"
-      Bot.new.send_message(sender_id, reply)
+      temp_bot = Bot.new
+      response = temp_bot.generate_response(messaging["message"]["text"])
+      temp_bot.send_message(sender_id, response)
     end
   end
   'ok'
