@@ -27,5 +27,5 @@ post "/" do
 end
 
 get "/get_long_token" do
-  get_token
+  Bot.new.get_token
 end
