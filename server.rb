@@ -25,7 +25,3 @@ post "/" do
   end
   'ok'
 end
-
-get "/get_long_token" do
-  Bot.new.get_token
-end
