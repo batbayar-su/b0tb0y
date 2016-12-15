@@ -22,11 +22,11 @@ class Bot
     if message_text.include? "weather"
       response = HTTP.get(aqi_url)
       parsed_json = JSON.parse(response)
-      "Current Temp: " parsed_json['data']['aqi']
+      "Current Temp: " + parsed_json['data']['aqi']
     elsif message_text.include? "air quality" or message_text.include? "airquality"
       response = HTTP.get(aqi_url)
       parsed_json = JSON.parse(response)
-      "Current AQI: " parsed_json['data']['aqi']
+      "Current AQI: " + parsed_json['data']['aqi']
     else
       "You said \"#{message_text}\" and i cannot help with that."
     end
