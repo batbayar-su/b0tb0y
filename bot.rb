@@ -7,7 +7,7 @@ class Bot
   end
 
   def aqi_url
-    "http://api.waqi.info/feed/here/?token=" + ENV['AQI_API_TOKEN']
+    "http://api.waqi.info/feed/geo:47.910636;106.912823/?token=" + ENV['AQI_API_TOKEN']
   end
 
   def yahoo_url
